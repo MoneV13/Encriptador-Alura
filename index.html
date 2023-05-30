@@ -4,94 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
     <title>Encriptador JR</title>
 </head>
-
 <body>
     <nav>        
             <h1>Challenge # 1 - One Encriptador de Texto - Alura</h1>            
     </nav>
-
     <div class="contenedorPadre">
-
         <div class="contenedorCentral">
-
             <div class="contenedorIzquierdo">
-
                 <div class="logo">
                     <p class="logo"><span style="--item:1"><img src="Imagenes/Logo.png" alt="" ></span></p>
                 </div>
-
                 <div class="entradaTexto">
                     <textarea name="textAreaIzq" class="textAreaIzq" id="textAreaIzq" cols="30" rows="13" placeholder="Ingrese el texto aquí"></textarea>
                 </div>
-
                 <div class="advertencias">
                     <p class="advertencia"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos </p>
-                </div>
-                
+                </div>                
                 <div class="contenedorBotonesIzquierdo">
                     <input type="button" value="Encriptar" class="boton encriptar" onclick="encriptar()">
-                    <input type="button" value="Desencriptar" class="boton desencriptar" onclick="desencriptar()">
-                    
-                </div>
-    
-            </div>
-    
-            <div class="contenedorDerecho">
-    
+                    <input type="button" value="Desencriptar" class="boton desencriptar" onclick="desencriptar()">                    
+                </div>    
+            </div>    
+            <div class="contenedorDerecho">    
                 <div id="salidaDetexto" class="salidaDetexto">
                     <textarea name="" id="textAreaDer" class="textAreaDer" cols="30" rows="7"></textarea>
                 </div>
-
                 <div id="contenedorBotonesDerecho" class="contenedorBotonesDerecho">
                     <input type="button" value="Copiar" class="boton copiar" onclick="copy()">
-                </div>
-                
+                </div>                
                 <div id="sinMensaje" class="sinMensaje">
                     <img src="Imagenes/muneco.jpg" alt="" class="dibujo">
                     <p class="textoSinMensaje1">Ningún mensaje <br> fue encontrado</p>
-                    <p class="textoSinMensaje2">Ingresa el texto que desees <br> encriptar o desencriptar.</p>
-                    
+                    <p class="textoSinMensaje2">Ingresa el texto que desees <br> encriptar o desencriptar.</p>                    
                 </div>
-
-            </div>
-    
+            </div>    
         </div>
-
     </div>
-    <script src="/script.js"> </script>
+    <script src="script.js"> </script>
 </body>
-
-
-<!--Visto en el video
-<body>
-    <header>
-        <img class="logo" src="Imagenes/Logo.png" alt="logo de alura">
-    </header>
-    <main>
-        <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div>
-                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencritar</button>
-
-            </div>
-        </section>
-        <section>
-            <textarea class="mensaje" cols="20" rows="10" placeholder=""></textarea>
-            <div>
-                <button class="btn-copiar">Copiar</button>
-            </div>
-        </section>
-    </main>
-</body> 
--->
 </html>
